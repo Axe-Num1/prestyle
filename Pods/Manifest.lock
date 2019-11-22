@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (4.9.1)
+  - Fusuma (1.3.3)
+  - ImageSlideshow (1.8.1):
+    - ImageSlideshow/Core (= 1.8.1)
+  - ImageSlideshow/Core (1.8.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.9.1)
+  - Fusuma
+  - ImageSlideshow (~> 1.8.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Fusuma
+    - ImageSlideshow
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Fusuma: 3bd08c8c5341ec60c0074fa28570fea8765966f0
+  ImageSlideshow: 634865d7d4e96f21e3830a31b51bde768cc94cea
+
+PODFILE CHECKSUM: 86973d0008b674cc8d8c48cabd634ac04a2e839d
+
+COCOAPODS: 1.8.4
