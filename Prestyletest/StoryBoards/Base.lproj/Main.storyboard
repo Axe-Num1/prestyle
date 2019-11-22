@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NkQ-KQ-gvf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="OpC-jD-7Sv">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="NkQ-KQ-gvf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aIw-LW-h5A">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="wOZ-Bq-D0w" kind="relationship" relationship="viewControllers" id="WS7-ZW-Iq7"/>
+                        <segue destination="IX6-Lc-R7v" kind="relationship" relationship="viewControllers" id="deE-Zk-Zp8"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B3H-e6-4lK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--Customizing-->
+        <scene sceneID="FGe-fk-5HF">
+            <objects>
+                <navigationController id="IX6-Lc-R7v" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Customizing" image="square.and.pencil" catalog="system" badgeValue="new" id="BtX-lv-F1P"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rnp-s8-XbY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Jmm-OH-IMJ" kind="relationship" relationship="rootViewController" id="d1T-Ke-dvU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OxP-tr-AcR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="348" y="956"/>
+        </scene>
+        <!--Editor-->
+        <scene sceneID="uFe-Xe-pJ4">
+            <objects>
+                <viewController id="Jmm-OH-IMJ" customClass="CustomizingViewController" customModule="Prestyletest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ohn-3f-d5f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Nomal" translatesAutoresizingMaskIntoConstraints="NO" id="UpR-lc-s5F">
+                                <rect key="frame" x="0.0" y="53" width="414" height="595"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zi1-5p-dyY">
+                                <rect key="frame" x="0.0" y="648" width="414" height="165"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mN1-lO-WZA">
+                                        <rect key="frame" x="16" y="115" width="383" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <segments>
+                                            <segment title="" image="Bald"/>
+                                            <segment title="" image="Bangs"/>
+                                            <segment title="" image="BlackHair"/>
+                                            <segment title="" image="BrownHair"/>
+                                            <segment title="" image="BlondHair"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="editHair:" destination="Jmm-OH-IMJ" eventType="valueChanged" id="9ar-u5-zJd"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="V7M-df-lvi">
+                                        <rect key="frame" x="16" y="39" width="156" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <segments>
+                                            <segment title="EyeBrow"/>
+                                            <segment title="Glass"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="editEye:" destination="Jmm-OH-IMJ" eventType="valueChanged" id="X2X-IE-4QG"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="twZ-AN-MwU">
+                                        <rect key="frame" x="192" y="38" width="207" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <segments>
+                                            <segment title="Smile"/>
+                                            <segment title="Beard"/>
+                                            <segment title="Mustache"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="editMouth:" destination="Jmm-OH-IMJ" eventType="valueChanged" id="gdZ-ad-PI4"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Eye" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gno-Bq-MD5">
+                                        <rect key="frame" x="80" y="8" width="28" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hair" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLD-xz-3mb">
+                                        <rect key="frame" x="191" y="86" width="32" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mouth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfX-y8-gma">
+                                        <rect key="frame" x="270" y="8" width="50" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="4eo-u4-A2q"/>
+                                    <constraint firstAttribute="height" constant="165" id="Bbd-F5-Knt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UpR-lc-s5F" firstAttribute="top" secondItem="T0L-DX-V0X" secondAttribute="top" constant="-35" id="G7O-F9-mbW"/>
+                            <constraint firstItem="T0L-DX-V0X" firstAttribute="trailing" secondItem="zi1-5p-dyY" secondAttribute="trailing" id="Hjd-86-VWS"/>
+                            <constraint firstItem="T0L-DX-V0X" firstAttribute="bottom" secondItem="zi1-5p-dyY" secondAttribute="bottom" id="Lok-iR-fdv"/>
+                            <constraint firstItem="UpR-lc-s5F" firstAttribute="leading" secondItem="T0L-DX-V0X" secondAttribute="leading" id="LpC-bd-HKP"/>
+                            <constraint firstItem="zi1-5p-dyY" firstAttribute="top" secondItem="UpR-lc-s5F" secondAttribute="bottom" id="bnR-2c-U0L"/>
+                            <constraint firstItem="zi1-5p-dyY" firstAttribute="leading" secondItem="T0L-DX-V0X" secondAttribute="leading" id="fI1-m6-ny5"/>
+                            <constraint firstItem="UpR-lc-s5F" firstAttribute="trailing" secondItem="T0L-DX-V0X" secondAttribute="trailing" id="vo9-CN-GPM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="T0L-DX-V0X"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Editor" id="ghe-MV-c7D">
+                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="u14-u8-mZR">
+                            <connections>
+                                <action selector="showButtonPressed:" destination="Jmm-OH-IMJ" id="QfV-D2-p81"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="mf8-RL-bYV">
+                            <connections>
+                                <action selector="get:" destination="Jmm-OH-IMJ" id="fn6-wU-obd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="UpR-lc-s5F" id="D5N-K5-aYc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TYt-bK-qeH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1160.8695652173915" y="955.58035714285711"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="l1a-vc-8BX">
+            <objects>
+                <navigationController id="wOZ-Bq-D0w" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="QE1-04-f4N"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6Yn-KN-vlZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kvm-FS-sJJ" kind="relationship" relationship="rootViewController" id="7K7-Jc-L9V"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aZv-IV-u79" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1242" y="138"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="DMn-pk-vTR">
+            <objects>
+                <viewController id="kvm-FS-sJJ" customClass="ViewController" customModule="Prestyletest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jl2-4k-tPL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dr2-P6-ilP">
+                                <rect key="frame" x="0.0" y="413" width="414" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="ScT-vj-ltS"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" highlightedImage="Bald" translatesAutoresizingMaskIntoConstraints="NO" id="GRe-83-jPc">
+                                <rect key="frame" x="0.0" y="88" width="318" height="221"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="318" id="QX6-O6-jyX"/>
+                                    <constraint firstAttribute="height" constant="221" id="fkR-rv-dIV"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dr2-P6-ilP" firstAttribute="trailing" secondItem="Ih6-1g-6YR" secondAttribute="trailing" id="3Gb-Tf-Hr8"/>
+                            <constraint firstItem="GRe-83-jPc" firstAttribute="leading" secondItem="Ih6-1g-6YR" secondAttribute="leading" id="5R2-CL-74y"/>
+                            <constraint firstItem="dr2-P6-ilP" firstAttribute="leading" secondItem="Ih6-1g-6YR" secondAttribute="leading" id="6jJ-cm-MQu"/>
+                            <constraint firstItem="GRe-83-jPc" firstAttribute="top" secondItem="Ih6-1g-6YR" secondAttribute="top" id="ALj-yW-P7v"/>
+                            <constraint firstItem="dr2-P6-ilP" firstAttribute="bottom" secondItem="Ih6-1g-6YR" secondAttribute="bottom" id="pYf-Vf-MUJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ih6-1g-6YR"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qj5-xv-XCT">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="twM-zx-NU7">
+                            <connections>
+                                <action selector="addAction:" destination="kvm-FS-sJJ" id="eES-d3-tSR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="dr2-P6-ilP" id="CCe-Di-8Bk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i3n-aS-syS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2171.0144927536235" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bald" width="30.5" height="30.5"/>
+        <image name="Bangs" width="30.5" height="30.5"/>
+        <image name="BlackHair" width="29.5" height="30.5"/>
+        <image name="BlondHair" width="29" height="30"/>
+        <image name="BrownHair" width="30.5" height="31.5"/>
+        <image name="Logo" width="117.5" height="96"/>
+        <image name="Nomal" width="480" height="480"/>
+        <image name="house.fill" catalog="system" width="64" height="52"/>
+        <image name="square.and.pencil" catalog="system" width="64" height="58"/>
+    </resources>
+</document>
