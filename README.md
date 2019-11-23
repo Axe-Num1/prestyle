@@ -12,15 +12,15 @@
 
 ## Built With
 
-* [Fusuma]
-* [Alamofire & AlamofireImage]
-* [SwiftyJSON]
+* [Fusuma](https://github.com/ytakzk/Fusuma)
+* [Alamofire & AlamofireImage](https://github.com/Alamofire/Alamofire)
+* [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)
 
 ## Versioning
 
 ## License
 
-This project is licensed under the GNU License - see the [LICENSE.md](https://github.com/Axe-Num1/Dandi_iOS/blob/master/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Axe-Num1/prestyle/blob/master/LICENSE) file for details
 
 ## Authors
 
