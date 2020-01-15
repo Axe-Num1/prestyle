@@ -1,4 +1,8 @@
 # prestyle
+![issue badge](https://img.shields.io/badge/ver.-Swift5-orange?logo=swift)
+![issue badge](https://img.shields.io/badge/ver.-Xcode11-blue?logo=xcode)
+![GitHub stars](https://img.shields.io/github/stars/Axe-Num1/prestyle?style=social)
+
 3개 소프트웨어 마이스터고 연합 해커톤 프로젝트
 
 자신의 헤어스타일을 바꾸어 볼 수 있는 앱
