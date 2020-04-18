@@ -7,7 +7,7 @@
 
 자신의 헤어스타일을 바꾸어 볼 수 있는 앱
 
-# Caution: Required Refactor!
+# Coming Soon: Wait, Refactoring Now!
 
 ![MainUI](./image/MainUI.png)
 
