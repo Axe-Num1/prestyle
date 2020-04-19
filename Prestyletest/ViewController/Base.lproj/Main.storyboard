@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b9n-zJ-0Bl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Editor-->
+        <scene sceneID="G9T-5X-t9C">
+            <objects>
+                <viewController id="H3R-vj-oRb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZlT-0e-SDu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ydH-7p-Z7K">
+                                <rect key="frame" x="0.0" y="613" width="414" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hair" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HM1-hu-uHT">
+                                        <rect key="frame" x="191" y="113" width="32" height="21"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eye" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmh-0G-ME8">
+                                        <rect key="frame" x="68.5" y="27" width="28" height="21"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mouth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znc-aa-FU4">
+                                        <rect key="frame" x="259.5" y="27" width="50" height="21"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pmS-ez-aa7">
+                                        <rect key="frame" x="10" y="144" width="394" height="32"/>
+                                        <segments>
+                                            <segment title="" image="Bald"/>
+                                            <segment title="" image="Bangs"/>
+                                            <segment title="" image="BlackHair"/>
+                                            <segment title="" image="BrownHair"/>
+                                            <segment title="" image="BlondHair"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2Al-Zh-qbv">
+                                        <rect key="frame" x="165" y="53" width="239" height="32"/>
+                                        <segments>
+                                            <segment title="Smile"/>
+                                            <segment title="Beard"/>
+                                            <segment title="Mustache"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="v4F-gc-vcf">
+                                        <rect key="frame" x="10" y="53" width="145" height="32"/>
+                                        <segments>
+                                            <segment title="EyeBrow"/>
+                                            <segment title="Glass"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="pmS-ez-aa7" secondAttribute="bottom" constant="25" id="0bg-5w-D9m"/>
+                                    <constraint firstItem="v4F-gc-vcf" firstAttribute="top" secondItem="rmh-0G-ME8" secondAttribute="bottom" constant="5" id="8rg-fS-0wL"/>
+                                    <constraint firstItem="pmS-ez-aa7" firstAttribute="top" secondItem="HM1-hu-uHT" secondAttribute="bottom" constant="10" id="Aoy-D7-M2G"/>
+                                    <constraint firstItem="znc-aa-FU4" firstAttribute="centerX" secondItem="2Al-Zh-qbv" secondAttribute="centerX" id="ETM-5v-nfY"/>
+                                    <constraint firstItem="rmh-0G-ME8" firstAttribute="centerX" secondItem="v4F-gc-vcf" secondAttribute="centerX" id="FHb-Zn-ntb"/>
+                                    <constraint firstItem="pmS-ez-aa7" firstAttribute="centerX" secondItem="ydH-7p-Z7K" secondAttribute="centerX" id="GV0-KY-SRD"/>
+                                    <constraint firstItem="v4F-gc-vcf" firstAttribute="leading" secondItem="pmS-ez-aa7" secondAttribute="leading" id="HXD-2o-nbf"/>
+                                    <constraint firstItem="pmS-ez-aa7" firstAttribute="top" secondItem="2Al-Zh-qbv" secondAttribute="bottom" constant="60" id="Jhx-DK-dlH"/>
+                                    <constraint firstAttribute="height" constant="200" id="QEQ-0Y-0J0"/>
+                                    <constraint firstAttribute="trailing" secondItem="pmS-ez-aa7" secondAttribute="trailing" constant="10" id="Rw5-M3-e9b"/>
+                                    <constraint firstItem="HM1-hu-uHT" firstAttribute="centerX" secondItem="pmS-ez-aa7" secondAttribute="centerX" id="Vjb-Mf-VNI"/>
+                                    <constraint firstItem="2Al-Zh-qbv" firstAttribute="trailing" secondItem="pmS-ez-aa7" secondAttribute="trailing" id="eaV-fU-Gym"/>
+                                    <constraint firstItem="2Al-Zh-qbv" firstAttribute="top" secondItem="znc-aa-FU4" secondAttribute="bottom" constant="5" id="irf-Rv-0Js"/>
+                                    <constraint firstItem="pmS-ez-aa7" firstAttribute="top" secondItem="v4F-gc-vcf" secondAttribute="bottom" constant="60" id="pTK-rK-IUQ"/>
+                                    <constraint firstItem="pmS-ez-aa7" firstAttribute="leading" secondItem="ydH-7p-Z7K" secondAttribute="leading" constant="10" id="rSH-lH-1LF"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="40P-7h-547">
+                                <rect key="frame" x="0.0" y="88" width="414" height="525"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PHL-og-EI3">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="525"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="PHL-og-EI3" firstAttribute="leading" secondItem="40P-7h-547" secondAttribute="leading" id="ax5-PY-DpU"/>
+                                    <constraint firstAttribute="trailing" secondItem="PHL-og-EI3" secondAttribute="trailing" id="bgy-8U-J30"/>
+                                    <constraint firstAttribute="bottom" secondItem="PHL-og-EI3" secondAttribute="bottom" id="lm4-eQ-qpG"/>
+                                    <constraint firstItem="PHL-og-EI3" firstAttribute="top" secondItem="40P-7h-547" secondAttribute="top" id="wJR-kr-ztb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="n7q-vB-ptA" firstAttribute="trailing" secondItem="40P-7h-547" secondAttribute="trailing" id="8OW-np-ChG"/>
+                            <constraint firstItem="ydH-7p-Z7K" firstAttribute="leading" secondItem="n7q-vB-ptA" secondAttribute="leading" id="I9C-f5-Yq5"/>
+                            <constraint firstItem="40P-7h-547" firstAttribute="top" secondItem="n7q-vB-ptA" secondAttribute="top" id="IfO-L5-Anp"/>
+                            <constraint firstItem="ydH-7p-Z7K" firstAttribute="trailing" secondItem="n7q-vB-ptA" secondAttribute="trailing" id="MRC-mc-2rp"/>
+                            <constraint firstItem="40P-7h-547" firstAttribute="leading" secondItem="n7q-vB-ptA" secondAttribute="leading" id="SST-4d-arN"/>
+                            <constraint firstItem="n7q-vB-ptA" firstAttribute="bottom" secondItem="ydH-7p-Z7K" secondAttribute="bottom" id="oep-BT-OGu"/>
+                            <constraint firstItem="ydH-7p-Z7K" firstAttribute="top" secondItem="40P-7h-547" secondAttribute="bottom" id="oof-QZ-r5j"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="n7q-vB-ptA"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Customizing" selectedImage="pencil" catalog="system" id="7A0-JZ-5Qb"/>
+                    <navigationItem key="navigationItem" title="Editor" id="lK9-3W-skr">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="d48-ku-gox"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="ZsR-Nx-Lx9"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jyk-u1-et5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4266.666666666667" y="1278.3482142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bDh-68-Ouj">
+            <objects>
+                <viewController id="Mdl-Zi-I64" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BIW-Ov-7Wn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="gbd-vq-UAC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pVZ-ln-PK0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5132" y="1278"/>
+        </scene>
+        <!--Gallery-->
+        <scene sceneID="qWU-rg-RfI">
+            <objects>
+                <viewController id="jn6-Bh-LcN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rW6-GQ-ftl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Ial-oW-5eY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Gallery" image="photo.on.rectangle" catalog="system" id="gLl-fj-dRg"/>
+                    <navigationItem key="navigationItem" title="Gallery" id="2K9-t5-uWl"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aVh-wI-cr5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4268" y="632"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="eGu-Jh-DQ3">
+            <objects>
+                <tabBarController id="ybj-uC-HTd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="yTk-m1-icH"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6M2-FS-orA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="jn6-Bh-LcN" kind="relationship" relationship="viewControllers" id="aKG-9s-hcP"/>
+                        <segue destination="H3R-vj-oRb" kind="relationship" relationship="viewControllers" id="wVn-8L-9F6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uV3-Uo-G9I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3087" y="954"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="v2o-6a-r22">
+            <objects>
+                <navigationController id="b9n-zJ-0Bl" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="N9f-aB-FZr">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ybj-uC-HTd" kind="relationship" relationship="rootViewController" id="UIM-H5-d2H"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JAa-7X-yiS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2171" y="954"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bald" width="30.5" height="30.5"/>
+        <image name="Bangs" width="30.5" height="30.5"/>
+        <image name="BlackHair" width="29.5" height="30.5"/>
+        <image name="BlondHair" width="29" height="30"/>
+        <image name="BrownHair" width="30.5" height="31.5"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="photo.on.rectangle" catalog="system" width="128" height="98"/>
+    </resources>
+</document>

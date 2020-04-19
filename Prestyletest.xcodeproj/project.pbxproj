@@ -71,26 +71,17 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		F218D9592387329200907878 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				F218D9572387317900907878 /* CustomizingViewController.swift */,
-				F218D95B2387359600907878 /* imageUploader.swift */,
-				F248394A23872CED0075E10F /* ViewController.swift */,
-				F2A503DD23879B6A0098E281 /* CustomPhotoAlbum.swift */,
-				F2A503DF23879CEF0098E281 /* UIViewControllerExtension.swift */,
-				F2A503E123879D410098E281 /* UIActivityIndicatorViewExtension.swift */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		F218D95A238732A000907878 /* StoryBoards */ = {
+		F218D95A238732A000907878 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				F248395423872CEE0075E10F /* LaunchScreen.storyboard */,
 				F248394C23872CED0075E10F /* Main.storyboard */,
+				F218D9572387317900907878 /* CustomizingViewController.swift */,
+				F218D95B2387359600907878 /* imageUploader.swift */,
+				F248394A23872CED0075E10F /* ViewController.swift */,
+				F2A503DD23879B6A0098E281 /* CustomPhotoAlbum.swift */,
 			);
-			path = StoryBoards;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		F248393A23872CED0075E10F = {
@@ -114,8 +105,8 @@
 		F248394523872CED0075E10F /* Prestyletest */ = {
 			isa = PBXGroup;
 			children = (
-				F218D95A238732A000907878 /* StoryBoards */,
-				F218D9592387329200907878 /* ViewControllers */,
+				F29D91B4244C793200619EAC /* Extensions */,
+				F218D95A238732A000907878 /* ViewController */,
 				F248394623872CED0075E10F /* AppDelegate.swift */,
 				F248394823872CED0075E10F /* SceneDelegate.swift */,
 				F248395223872CEE0075E10F /* Assets.xcassets */,
@@ -123,6 +114,15 @@
 				F248394F23872CED0075E10F /* Prestyletest.xcdatamodeld */,
 			);
 			path = Prestyletest;
+			sourceTree = "<group>";
+		};
+		F29D91B4244C793200619EAC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F2A503DF23879CEF0098E281 /* UIViewControllerExtension.swift */,
+				F2A503E123879D410098E281 /* UIActivityIndicatorViewExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
