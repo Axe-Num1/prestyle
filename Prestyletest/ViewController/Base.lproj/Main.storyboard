@@ -10,7 +10,7 @@
         <!--Editor-->
         <scene sceneID="G9T-5X-t9C">
             <objects>
-                <viewController id="H3R-vj-oRb" sceneMemberID="viewController">
+                <viewController id="H3R-vj-oRb" customClass="EditorViewController" customModule="Prestyletest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZlT-0e-SDu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,6 +45,9 @@
                                             <segment title="" image="BrownHair"/>
                                             <segment title="" image="BlondHair"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="editHair:" destination="H3R-vj-oRb" eventType="valueChanged" id="xLi-6Z-1PY"/>
+                                        </connections>
                                     </segmentedControl>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2Al-Zh-qbv">
                                         <rect key="frame" x="165" y="53" width="239" height="32"/>
@@ -53,6 +56,9 @@
                                             <segment title="Beard"/>
                                             <segment title="Mustache"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="editMouth:" destination="H3R-vj-oRb" eventType="valueChanged" id="SBw-D8-SzC"/>
+                                        </connections>
                                     </segmentedControl>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="v4F-gc-vcf">
                                         <rect key="frame" x="10" y="53" width="145" height="32"/>
@@ -60,6 +66,9 @@
                                             <segment title="EyeBrow"/>
                                             <segment title="Glass"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="editEye:" destination="H3R-vj-oRb" eventType="valueChanged" id="eFi-53-TvV"/>
+                                        </connections>
                                     </segmentedControl>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -111,10 +120,21 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Customizing" selectedImage="pencil" catalog="system" id="7A0-JZ-5Qb"/>
                     <navigationItem key="navigationItem" title="Editor" id="lK9-3W-skr">
-                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="d48-ku-gox"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="ZsR-Nx-Lx9"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="d48-ku-gox">
+                            <connections>
+                                <action selector="galleryButton:" destination="H3R-vj-oRb" id="5Pu-Dz-UIl"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="ZsR-Nx-Lx9">
+                            <connections>
+                                <action selector="cameraButtton:" destination="H3R-vj-oRb" id="wfX-iC-Qal"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="editImage" destination="PHL-og-EI3" id="CZA-X0-fJ5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jyk-u1-et5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

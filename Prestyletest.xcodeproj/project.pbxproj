@@ -20,6 +20,8 @@
 		F2A503DE23879B6A0098E281 /* CustomPhotoAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A503DD23879B6A0098E281 /* CustomPhotoAlbum.swift */; };
 		F2A503E023879CEF0098E281 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A503DF23879CEF0098E281 /* UIViewControllerExtension.swift */; };
 		F2A503E223879D410098E281 /* UIActivityIndicatorViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A503E123879D410098E281 /* UIActivityIndicatorViewExtension.swift */; };
+		F2C899C8246100B500C090ED /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C899C7246100B500C090ED /* EditorViewController.swift */; };
+		F2C899CA2461021E00C090ED /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C899C92461021E00C090ED /* ServerManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		F2A503DD23879B6A0098E281 /* CustomPhotoAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPhotoAlbum.swift; sourceTree = "<group>"; };
 		F2A503DF23879CEF0098E281 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		F2A503E123879D410098E281 /* UIActivityIndicatorViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIActivityIndicatorViewExtension.swift; sourceTree = "<group>"; };
+		F2C899C7246100B500C090ED /* EditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorViewController.swift; sourceTree = "<group>"; };
+		F2C899C92461021E00C090ED /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,10 +80,7 @@
 			children = (
 				F248395423872CEE0075E10F /* LaunchScreen.storyboard */,
 				F248394C23872CED0075E10F /* Main.storyboard */,
-				F218D9572387317900907878 /* CustomizingViewController.swift */,
-				F218D95B2387359600907878 /* imageUploader.swift */,
-				F248394A23872CED0075E10F /* ViewController.swift */,
-				F2A503DD23879B6A0098E281 /* CustomPhotoAlbum.swift */,
+				F2C899C7246100B500C090ED /* EditorViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -105,7 +106,9 @@
 		F248394523872CED0075E10F /* Prestyletest */ = {
 			isa = PBXGroup;
 			children = (
+				F2C899CC2461029500C090ED /* etc */,
 				F29D91B4244C793200619EAC /* Extensions */,
+				F2C899CB2461022700C090ED /* Network */,
 				F218D95A238732A000907878 /* ViewController */,
 				F248394623872CED0075E10F /* AppDelegate.swift */,
 				F248394823872CED0075E10F /* SceneDelegate.swift */,
@@ -123,6 +126,25 @@
 				F2A503E123879D410098E281 /* UIActivityIndicatorViewExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F2C899CB2461022700C090ED /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F2C899C92461021E00C090ED /* ServerManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F2C899CC2461029500C090ED /* etc */ = {
+			isa = PBXGroup;
+			children = (
+				F218D9572387317900907878 /* CustomizingViewController.swift */,
+				F218D95B2387359600907878 /* imageUploader.swift */,
+				F2A503DD23879B6A0098E281 /* CustomPhotoAlbum.swift */,
+				F248394A23872CED0075E10F /* ViewController.swift */,
+			);
+			path = etc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,12 +265,14 @@
 				F218D9582387317900907878 /* CustomizingViewController.swift in Sources */,
 				F218D95C2387359600907878 /* imageUploader.swift in Sources */,
 				F248394B23872CED0075E10F /* ViewController.swift in Sources */,
+				F2C899C8246100B500C090ED /* EditorViewController.swift in Sources */,
 				F248395123872CED0075E10F /* Prestyletest.xcdatamodeld in Sources */,
 				F2A503E023879CEF0098E281 /* UIViewControllerExtension.swift in Sources */,
 				F248394723872CED0075E10F /* AppDelegate.swift in Sources */,
 				F2A503DE23879B6A0098E281 /* CustomPhotoAlbum.swift in Sources */,
 				F248394923872CED0075E10F /* SceneDelegate.swift in Sources */,
 				F2A503E223879D410098E281 /* UIActivityIndicatorViewExtension.swift in Sources */,
+				F2C899CA2461021E00C090ED /* ServerManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
